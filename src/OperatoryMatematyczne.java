@@ -22,8 +22,9 @@ public class OperatoryMatematyczne {
         double divisionDoubleOnDoubleNumber3 = thirdNumber / fourthNumber; // 0,666
         double divisionShortcut = thirdNumber/=fourthNumber; // 0,666
 
+
         int modulo = secondNumber % firstNumber; // ile razy firstNumber miesci sie w secondNumber i jak zostanie reszta, czyli 4 miesci sie raz w 6 i reszta to 2, modulo zwroci 2
-        int moduloShortcut = secondNumber %= firstNumber;
+        //int moduloShortcut = secondNumber %= firstNumber;
 
         System.out.println("Addition result: " + addition);
         System.out.println("Addition result: " + additionShortcut);
@@ -42,6 +43,6 @@ public class OperatoryMatematyczne {
         System.out.println("Division result: " + divisionShortcut);
         System.out.println();
         System.out.println("Modulo result: " + modulo);
-        System.out.println("Modulo result: " + moduloShortcut);
+        //System.out.println("Modulo result: " + moduloShortcut);
     }
 }

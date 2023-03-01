@@ -6,7 +6,7 @@ public class AgeChecker {
         System.out.println("Podaj swoj wiek");
         int userAge = ageChecker.nextInt();
 
-        if (userAge < 18) {
+        if (userAge < 18 && userAge>=1) {
             System.out.println("Nie moge sprzedać Ci alkoholu");
             int roznicaWieku = 18 - userAge;
             if (roznicaWieku == 1) {
@@ -16,6 +16,8 @@ public class AgeChecker {
             } else {
                 System.out.println("Zapraszamy do sklepu za " + roznicaWieku + " lat");
             }
+        } else if (userAge<1) {
+            System.out.println("Podany wiek jest nieprawidłowy");
         } else {
             System.out.println("Zapraszamy do zakupow");
         }
